@@ -174,13 +174,13 @@ const jsonLdData = {
     },
     {
       '@type': 'SoftwareApplication',
-      '@id': 'https://digitaldukan.vercel.app/#application',
-      name: 'Invento (DigitalDukan)',
+      '@id': 'https://nirdeep-arts.pages.dev/#application',
+      name: 'Nirdeep Arts Cloud OS',
       operatingSystem: 'All Web Browsers',
       applicationCategory: 'BusinessApplication',
-      url: 'https://digitaldukan.vercel.app/',
+      url: 'https://nirdeep-arts.pages.dev/',
       description:
-        'Full-stack multi-tenant inventory & analytics management SaaS that allows business owners to track real-time stock levels, manage supplier relationships, and handle customer data.',
+        'Dual-shop ERP and real-time POS operating system deployed across active fabrication locations in Kathmandu with Convex sync, automated dimension math, dual BS/AD calendar, and WhatsApp invoicing.',
       author: {
         '@id': `${siteUrl}/#person`,
       },
@@ -190,13 +190,29 @@ const jsonLdData = {
     },
     {
       '@type': 'SoftwareApplication',
-      '@id': 'https://penowa.in/#application',
+      '@id': 'https://digitaldukan.vercel.app/#application',
+      name: 'Invento (DigitalDukan)',
+      operatingSystem: 'All Web Browsers',
+      applicationCategory: 'BusinessApplication',
+      url: 'https://digitaldukan.vercel.app/',
+      description:
+        'Full-stack multi-tenant inventory & analytics management SaaS deployed for consumer electronics & home appliances retail (TV, refrigerator, washing machines) to manage real-time stock and supplier data.',
+      author: {
+        '@id': `${siteUrl}/#person`,
+      },
+      creator: {
+        '@id': `${siteUrl}/#person`,
+      },
+    },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': 'https://puremelt.vercel.app/#application',
       name: 'Penowa',
       operatingSystem: 'All Web Browsers',
       applicationCategory: 'ShoppingApplication',
-      url: 'https://penowa.in',
+      url: 'https://puremelt.vercel.app',
       description:
-        'Conversion-optimized Direct-to-Consumer (D2C) organic nuts butter & peanut butter e-commerce storefront with high-performance UI/UX and frictionless mobile checkout.',
+        'Conversion-optimized Direct-to-Consumer (D2C) organic peanut butter storefront built for an Indian entrepreneur with high-performance UI/UX and frictionless mobile checkout.',
       author: {
         '@id': `${siteUrl}/#person`,
       },
@@ -229,7 +245,7 @@ const jsonLdData = {
           name: 'What projects has Gaurav Soni built?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Notable projects include Invento / DigitalDukan (a multi-tenant inventory management SaaS at digitaldukan.vercel.app) and Penowa (a D2C organic nuts butter storefront at penowa.in).',
+            text: 'Notable projects include Nirdeep Arts Cloud OS (a dual-shop ERP & POS with real-time Convex sync at nirdeep-arts.pages.dev), Invento / DigitalDukan (a multi-tenant inventory management SaaS at digitaldukan.vercel.app), and Penowa (a D2C organic nuts butter storefront at puremelt.vercel.app).',
           },
         },
         {
