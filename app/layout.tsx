@@ -129,6 +129,7 @@ const jsonLdData = {
       sameAs: [
         'https://www.linkedin.com/in/gaurav-web-dev/',
         'https://github.com/sonigaurav1',
+        'https://wa.me/9779705470563',
         siteUrl,
       ],
       knowsAbout: [
