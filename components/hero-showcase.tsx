@@ -42,8 +42,8 @@ const DEFAULT_PROJECTS: [Project, Project, Project] = [
   },
   {
     title: "Nirdeep Arts Cloud OS",
-    domain: "nirdeep-arts.pages.dev",
-    href: "https://nirdeep-arts.pages.dev/",
+    domain: "bizos-demo.pages.dev",
+    href: "https://bizos-demo.pages.dev/",
     src: "/images/bizos-pos.webp",
     alt: "Nirdeep Arts Cloud OS dashboard preview",
   },

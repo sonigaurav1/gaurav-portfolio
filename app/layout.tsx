@@ -175,13 +175,13 @@ const jsonLdData = {
     },
     {
       '@type': 'SoftwareApplication',
-      '@id': 'https://nirdeep-arts.pages.dev/#application',
+      '@id': 'https://bizos-demo.pages.dev/#application',
       name: 'Nirdeep Arts Cloud OS',
       operatingSystem: 'All Web Browsers',
       applicationCategory: 'BusinessApplication',
-      url: 'https://nirdeep-arts.pages.dev/',
+      url: 'https://bizos-demo.pages.dev/',
       description:
-        'Dual-shop ERP and real-time POS operating system deployed across active fabrication locations in Kathmandu with Convex sync, automated dimension math, dual BS/AD calendar, and WhatsApp invoicing.',
+        'Dual-shop retail fabrication ERP, real-time POS & automated accounting engine deployed across active fabrication locations in Kathmandu with Convex sync, automated dimension math, dual BS/AD calendar, and WhatsApp invoicing. Interactive demo sandbox available.',
       author: {
         '@id': `${siteUrl}/#person`,
       },
@@ -246,7 +246,7 @@ const jsonLdData = {
           name: 'What projects has Gaurav Soni built?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Notable projects include Nirdeep Arts Cloud OS (a dual-shop ERP & POS with real-time Convex sync at nirdeep-arts.pages.dev), Invento / DigitalDukan (a multi-tenant inventory management SaaS at digitaldukan.vercel.app), and Penowa (a D2C organic nuts butter storefront at puremelt.vercel.app).',
+            text: 'Notable projects include Nirdeep Arts Cloud OS (a dual-shop ERP & POS with real-time Convex sync and interactive demo sandbox at bizos-demo.pages.dev), Invento / DigitalDukan (a multi-tenant inventory management SaaS at digitaldukan.vercel.app), and Penowa (a D2C organic nuts butter storefront at puremelt.vercel.app).',
           },
         },
         {

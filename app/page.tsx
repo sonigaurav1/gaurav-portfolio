@@ -37,6 +37,8 @@ interface Project {
   title: string;
   subtitle: string;
   liveLink: string;
+  liveButtonText?: string;
+  liveProof?: string;
   githubLink?: string;
   category: string;
   tags: string[];
@@ -57,8 +59,12 @@ const PROJECTS: Project[] = [
   {
     id: "nirdeep-arts",
     title: "Nirdeep Arts Cloud OS (Dual-Shop ERP & POS)",
-    subtitle: "Dual-shop retail fabrication ERP, real-time POS & automated accounting engine",
-    liveLink: "https://nirdeep-arts.pages.dev/",
+    subtitle:
+      "Dual-shop retail fabrication ERP, real-time POS & automated accounting engine",
+    liveLink: "https://bizos-demo.pages.dev/",
+    liveButtonText: "View Interactive Demo",
+    liveProof:
+      "Active internal production deployment powering 2 retail locations in Kathmandu. Interactive demo sandbox available below.",
     category: "Cloud ERP, POS & Real-Time Sync",
     tags: [
       "React 19",
@@ -70,12 +76,12 @@ const PROJECTS: Project[] = [
     ],
     imageSrc: "/images/bizos-pos.webp",
     problem:
-      "The business was losing hours daily and leaking revenue through manual paper billing, complex flex dimension calculations (width × height sq.ft math done by hand), untracked Udharo (customer credit), and lack of WhatsApp invoice delivery.",
+      "The business was losing hours daily and leaking revenue through manual paper billing, complex flex dimension calculations (width × height sq.ft math done by hand), untracked customer credit, and lack of WhatsApp invoice delivery.",
     solution:
       "Architected a cloud-native dual-shop ERP & POS with real-time reactive sync via Convex, automated dimension math, dual Bikram Sambat (BS) / Gregorian (AD) calendar conversion, client-side vector PDF generation (@react-pdf/renderer), 1-tap WhatsApp invoice dispatch, and an integrated counter merchant QR payment modal.",
     impact:
-      "Eliminated manual calculation errors, centralized Udharo collection across 2 partner fabrication locations in Kathmandu, and automated daily P&L / Excel balance audits.",
-    deploymentInfo: "Live across 2 Retail Locations in Kathmandu",
+      "Eliminated manual calculation errors, centralized customer credit collection across 2 partner fabrication locations in Kathmandu, and automated daily P&L / Excel balance audits.",
+    deploymentInfo: "⚡ Deployed to Production for Nirdeep Arts (Kathmandu)",
     metrics: {
       lighthouse: 99,
       lcp: "< 910ms",
@@ -87,7 +93,7 @@ const PROJECTS: Project[] = [
       "Dual Calendar engine seamlessly bridging Bikram Sambat (BS) and Gregorian (AD) dates for local fiscal operations",
       "Client-side vector PDF generation (@react-pdf/renderer) & automated 1-tap WhatsApp invoice delivery",
       "Integrated Merchant Payment QR Modal with instant on-screen switching between shop Fonepay and bank QRs",
-      "Centralized Udharo (customer credit) tracking with automated daily P&L and Excel balance audit exports",
+      "Centralized customer credit (Udharo) tracking with automated daily P&L and Excel balance audit exports",
     ],
   },
   {
@@ -176,7 +182,7 @@ const FAQS: FAQItem[] = [
   {
     question: "What types of web applications has Gaurav Soni built?",
     answer:
-      "His key case studies include Nirdeep Arts Cloud OS (a dual-shop fabrication ERP & POS with real-time Convex sync at nirdeep-arts.pages.dev), Invento / DigitalDukan (a multi-tenant inventory management SaaS platform at digitaldukan.vercel.app), and Penowa (a conversion-optimized D2C organic nuts & peanut butter storefront at puremelt.vercel.app), along with production interfaces for international tech teams.",
+      "His key case studies include Nirdeep Arts Cloud OS (a dual-shop fabrication ERP & POS with real-time Convex sync and interactive demo sandbox at bizos-demo.pages.dev), Invento / DigitalDukan (a multi-tenant inventory management SaaS platform at digitaldukan.vercel.app), and Penowa (a conversion-optimized D2C organic nuts & peanut butter storefront at puremelt.vercel.app), along with production interfaces for international tech teams.",
     category: "Case Studies",
   },
   {
@@ -624,11 +630,18 @@ export default function PortfolioPage() {
                     <div className="lg:col-span-6 flex flex-col justify-between h-full space-y-6">
                       <div>
                         {/* Title & Action Buttons */}
-                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-4 border-b border-slate-800/80">
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 pb-4 border-b border-slate-800/80">
                           <div>
-                            <span className="text-xs font-mono text-indigo-400 font-semibold block mb-1">
-                              Case Study 0{index + 1}
-                            </span>
+                            <div className="flex items-center gap-2 flex-wrap mb-1.5">
+                              <span className="text-xs font-mono text-indigo-400 font-semibold block">
+                                Case Study 0{index + 1}
+                              </span>
+                              {project.deploymentInfo && (
+                                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-[11px] font-medium text-emerald-300">
+                                  {project.deploymentInfo}
+                                </span>
+                              )}
+                            </div>
                             <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
                               {project.title}
                             </h3>
@@ -637,7 +650,7 @@ export default function PortfolioPage() {
                             </p>
                           </div>
 
-                          <div className="flex items-center gap-2 self-start sm:self-auto">
+                          <div className="flex items-center gap-2 self-start sm:self-auto shrink-0 pt-1">
                             {project.githubLink && (
                               <a
                                 href={project.githubLink}
@@ -659,7 +672,7 @@ export default function PortfolioPage() {
                               rel="noopener noreferrer"
                               className="h-10 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-500 active:scale-[0.98] text-white font-semibold text-xs sm:text-sm inline-flex items-center gap-2 transition-all shadow-sm shadow-indigo-600/20 whitespace-nowrap"
                             >
-                              <span>View Live</span>
+                              <span>{project.liveButtonText || "View Live"}</span>
                               <ExternalLink className="w-3.5 h-3.5" />
                             </a>
                           </div>
@@ -667,6 +680,16 @@ export default function PortfolioPage() {
 
                         {/* Structured Narrative: Problem -> Solution -> Impact */}
                         <div className="mt-6 space-y-5 text-sm sm:text-base leading-relaxed">
+                          {project.liveProof && (
+                            <div className="p-3.5 rounded-xl bg-slate-950/80 border border-indigo-500/30 text-xs text-slate-300 flex items-start gap-2.5 shadow-sm">
+                              <span className="text-amber-400 font-bold shrink-0 mt-0.5">⚡</span>
+                              <div>
+                                <span className="font-semibold text-white">Live Proof: </span>
+                                <span className="text-slate-300">"{project.liveProof}"</span>
+                              </div>
+                            </div>
+                          )}
+
                           <div>
                             <h4 className="text-xs font-semibold text-rose-400 tracking-wide mb-1.5 flex items-center gap-1.5">
                               <span className="w-1.5 h-1.5 rounded-full bg-rose-400" />
