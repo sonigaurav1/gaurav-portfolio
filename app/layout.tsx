@@ -124,7 +124,7 @@ const jsonLdData = {
       description:
         'Frontend engineer specializing in the React and Next.js ecosystem, building fast, scalable web applications that drive business growth.',
       url: siteUrl,
-      email: 'mailto:gauravsoni7763@gmail.com',
+      email: 'mailto:contact@gauravsonidev.com',
       image: `${siteUrl}/images/gaurav-portrait.webp`,
       sameAs: [
         'https://www.linkedin.com/in/gaurav-web-dev/',
@@ -175,11 +175,11 @@ const jsonLdData = {
     },
     {
       '@type': 'SoftwareApplication',
-      '@id': 'https://bizos-demo.pages.dev/#application',
+      '@id': 'https://bizos.gauravsonidev.com/#application',
       name: 'Nirdeep Arts Cloud OS',
       operatingSystem: 'All Web Browsers',
       applicationCategory: 'BusinessApplication',
-      url: 'https://bizos-demo.pages.dev/',
+      url: 'https://bizos.gauravsonidev.com/',
       description:
         'Dual-shop retail fabrication ERP, real-time POS & automated accounting engine deployed across active fabrication locations in Kathmandu with Convex sync, automated dimension math, dual BS/AD calendar, and WhatsApp invoicing. Interactive demo sandbox available.',
       author: {
@@ -191,11 +191,11 @@ const jsonLdData = {
     },
     {
       '@type': 'SoftwareApplication',
-      '@id': 'https://digitaldukan.vercel.app/#application',
+      '@id': 'https://invento.gauravsonidev.com/#application',
       name: 'Invento (DigitalDukan)',
       operatingSystem: 'All Web Browsers',
       applicationCategory: 'BusinessApplication',
-      url: 'https://digitaldukan.vercel.app/',
+      url: 'https://invento.gauravsonidev.com/',
       description:
         'Full-stack multi-tenant inventory & analytics management SaaS deployed for consumer electronics & home appliances retail (TV, refrigerator, washing machines) to manage real-time stock and supplier data.',
       author: {
@@ -207,11 +207,11 @@ const jsonLdData = {
     },
     {
       '@type': 'SoftwareApplication',
-      '@id': 'https://puremelt.vercel.app/#application',
+      '@id': 'https://penowa.gauravsonidev.com/#application',
       name: 'Penowa',
       operatingSystem: 'All Web Browsers',
       applicationCategory: 'ShoppingApplication',
-      url: 'https://puremelt.vercel.app',
+      url: 'https://penowa.gauravsonidev.com/',
       description:
         'Conversion-optimized Direct-to-Consumer (D2C) organic peanut butter storefront built for an Indian entrepreneur with high-performance UI/UX and frictionless mobile checkout.',
       author: {
@@ -246,7 +246,7 @@ const jsonLdData = {
           name: 'What projects has Gaurav Soni built?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Notable projects include Nirdeep Arts Cloud OS (a dual-shop ERP & POS with real-time Convex sync and interactive demo sandbox at bizos-demo.pages.dev), Invento / DigitalDukan (a multi-tenant inventory management SaaS at digitaldukan.vercel.app), and Penowa (a D2C organic nuts butter storefront at puremelt.vercel.app).',
+            text: 'Notable projects include Nirdeep Arts Cloud OS (a dual-shop ERP & POS with real-time Convex sync and interactive demo sandbox at bizos.gauravsonidev.com), Invento / DigitalDukan (a multi-tenant inventory management SaaS at invento.gauravsonidev.com), and Penowa (a D2C organic nuts butter storefront at penowa.gauravsonidev.com).',
           },
         },
         {

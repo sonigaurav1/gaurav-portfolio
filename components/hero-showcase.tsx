@@ -28,22 +28,22 @@ type Pose = { x: string; y: string; rotate: number; scale: number };
 const DEFAULT_PROJECTS: [Project, Project, Project] = [
   {
     title: "Invento / DigitalDukan",
-    domain: "digitaldukan.vercel.app",
-    href: "https://digitaldukan.vercel.app/",
+    domain: "invento.gauravsonidev.com",
+    href: "https://invento.gauravsonidev.com/",
     src: "/images/invento.webp",
     alt: "Invento inventory dashboard preview",
   },
   {
     title: "Penowa",
-    domain: "puremelt.vercel.app",
-    href: "https://puremelt.vercel.app",
+    domain: "penowa.gauravsonidev.com",
+    href: "https://penowa.gauravsonidev.com/",
     src: "/images/penowa.webp",
     alt: "Penowa organic nut butter storefront preview",
   },
   {
     title: "Nirdeep Arts Cloud OS",
-    domain: "bizos-demo.pages.dev",
-    href: "https://bizos-demo.pages.dev/",
+    domain: "bizos.gauravsonidev.com",
+    href: "https://bizos.gauravsonidev.com/",
     src: "/images/bizos-pos.webp",
     alt: "Nirdeep Arts Cloud OS dashboard preview",
   },

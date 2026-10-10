@@ -61,7 +61,7 @@ const PROJECTS: Project[] = [
     title: "Nirdeep Arts Cloud OS (Dual-Shop ERP & POS)",
     subtitle:
       "Dual-shop retail fabrication ERP, real-time POS & automated accounting engine",
-    liveLink: "https://bizos-demo.pages.dev/",
+    liveLink: "https://bizos.gauravsonidev.com/",
     liveButtonText: "View Interactive Demo",
     liveProof:
       "Active internal production deployment powering 2 retail locations in Kathmandu. Interactive demo sandbox available below.",
@@ -100,7 +100,7 @@ const PROJECTS: Project[] = [
     id: "digitaldukan",
     title: "Invento / DigitalDukan (Inventory Management System)",
     subtitle: "Inventory & analytics system deployed for consumer electronics & home appliances retail",
-    liveLink: "https://digitaldukan.vercel.app/",
+    liveLink: "https://invento.gauravsonidev.com/",
     githubLink: "https://github.com/sonigaurav1/stock-management-system",
     category: "Enterprise SaaS & Internal Tools",
     tags: [
@@ -134,7 +134,7 @@ const PROJECTS: Project[] = [
     id: "puremelt",
     title: "Penowa (Organic Nut Butter D2C Storefront)",
     subtitle: "High-converting D2C peanut butter storefront built for an Indian entrepreneur brand",
-    liveLink: "https://puremelt.vercel.app",
+    liveLink: "https://penowa.gauravsonidev.com/",
     githubLink: "https://github.com/sonigaurav1/puremelt",
     category: "E-Commerce & High-Converting Web",
     tags: ["Next.js", "React", "Tailwind CSS", "Mobile First", "Performance"],
@@ -182,7 +182,7 @@ const FAQS: FAQItem[] = [
   {
     question: "What types of web applications has Gaurav Soni built?",
     answer:
-      "His key case studies include Nirdeep Arts Cloud OS (a dual-shop fabrication ERP & POS with real-time Convex sync and interactive demo sandbox at bizos-demo.pages.dev), Invento / DigitalDukan (a multi-tenant inventory management SaaS platform at digitaldukan.vercel.app), and Penowa (a conversion-optimized D2C organic nuts & peanut butter storefront at puremelt.vercel.app), along with production interfaces for international tech teams.",
+      "His key case studies include Nirdeep Arts Cloud OS (a dual-shop fabrication ERP & POS with real-time Convex sync and interactive demo sandbox at bizos.gauravsonidev.com), Invento / DigitalDukan (a multi-tenant inventory management SaaS platform at invento.gauravsonidev.com), and Penowa (a conversion-optimized D2C organic nuts & peanut butter storefront at penowa.gauravsonidev.com), along with production interfaces for international tech teams.",
     category: "Case Studies",
   },
   {
@@ -196,7 +196,7 @@ const FAQS: FAQItem[] = [
     question:
       "Is Gaurav Soni available for freelance contracts and project hire?",
     answer:
-      "Yes, Gaurav is currently taking on select freelance clients for custom web development, frontend architecture, and performance revamps. Direct inquiries can be sent through the contact form or directly via gauravsoni7763@gmail.com.",
+      "Yes, Gaurav is currently taking on select freelance clients for custom web development, frontend architecture, and performance revamps. Direct inquiries can be sent through the contact form or directly via contact@gauravsonidev.com.",
     category: "Hiring & Freelance",
   },
 ];
@@ -224,7 +224,7 @@ export default function PortfolioPage() {
   >("idle");
   const [formErrorMessage, setFormErrorMessage] = useState("");
 
-  const emailAddress = "gauravsoni7763@gmail.com";
+  const emailAddress = "contact@gauravsonidev.com";
   const whatsappUrl = "https://wa.me/9779705470563";
   const linkedinUrl = "https://www.linkedin.com/in/gaurav-web-dev/";
   const githubUrl = "https://github.com/sonigaurav1";
@@ -244,7 +244,7 @@ export default function PortfolioPage() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/gauravsoni7763@gmail.com",
+        "https://formsubmit.co/ajax/contact@gauravsonidev.com",
         {
           method: "POST",
           headers: {
@@ -279,7 +279,7 @@ export default function PortfolioPage() {
       console.error("FormSubmit error:", err);
       setFormStatus("error");
       setFormErrorMessage(
-        "Could not send message automatically. Please reach out directly to gauravsoni7763@gmail.com.",
+        "Could not send message automatically. Please reach out directly to contact@gauravsonidev.com.",
       );
     }
   };
@@ -685,7 +685,7 @@ export default function PortfolioPage() {
                               <span className="text-amber-400 font-bold shrink-0 mt-0.5">⚡</span>
                               <div>
                                 <span className="font-semibold text-white">Live Proof: </span>
-                                <span className="text-slate-300">"{project.liveProof}"</span>
+                                <span className="text-slate-300">&quot;{project.liveProof}&quot;</span>
                               </div>
                             </div>
                           )}
@@ -756,7 +756,7 @@ export default function PortfolioPage() {
                       </div>
 
                       {/* Bottom Live URL Indicator */}
-                      <div className="pt-3 border-t border-slate-800/50 flex items-center justify-between text-xs text-slate-400">
+                      <div className="pt-3 border-t border-slate-800/50 w-full flex items-center justify-between gap-4 text-xs text-slate-400">
                         <div className="flex items-center gap-2">
                           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                           <span className="font-mono text-slate-300">
@@ -765,7 +765,7 @@ export default function PortfolioPage() {
                               .replace(/\/$/, "")}
                           </span>
                         </div>
-                        <span className="text-slate-400 font-medium hidden sm:inline">
+                        <span className="text-slate-400 ml-auto font-medium hidden sm:inline">
                           {project.deploymentInfo || "Production Deployed"}
                         </span>
                       </div>

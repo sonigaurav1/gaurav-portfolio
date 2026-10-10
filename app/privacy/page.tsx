@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   const lastUpdated = 'September 28, 2026';
-  const emailAddress = 'gauravsoni7763@gmail.com';
+  const emailAddress = 'contact@gauravsonidev.com';
 
   return (
     <div className="min-h-screen bg-gray-950 text-slate-100 selection:bg-indigo-500 selection:text-white">
