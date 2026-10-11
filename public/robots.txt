@@ -29,4 +29,3 @@ User-agent: cohere-ai
 Allow: /
 
 Sitemap: https://gauravsonidev.com/sitemap.xml
-Host: https://gauravsonidev.com
